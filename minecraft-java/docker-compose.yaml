@@ -10,4 +10,4 @@ services:
     ports:
       - 25565:25565
     volumes:
-      - ${PWD}/minecraft-data/java:/data"
+      - "${PWD}/minecraft-data/java:/data"
