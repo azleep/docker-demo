@@ -7,9 +7,7 @@ run:
 
 stop:
 	docker stop jenkins
+	docker rm jenkins
 
 start:
 	docker start jenkins
-
-purge:
-	docker rm jenkins
