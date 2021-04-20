@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 USER root
 
-RUN apt -y update && apt -y upgrade && \
+RUN apt -y update && \
     apt -y install vim \
         python3 \
         python3-pip
