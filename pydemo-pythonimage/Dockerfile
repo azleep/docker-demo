@@ -1,3 +1,5 @@
-FROM python:3.9.4
+FROM python:3.8.5
 
-RUN pip install bottle
+RUN pip install bottle redis
+
+ENTRYPOINT ["python3", "/opt/workspace/demo.py"]

@@ -5,7 +5,9 @@ services:
     build: .
     container_name: pydemo
     ports:
-      - 8080:8080
+      - 8888:8888
     volumes:
       - "${PWD}/src:/opt/workspace"
     entrypoint: "python3 /opt/workspace/demo.py"
+  redis:
+    image: redis:latest
